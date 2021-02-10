@@ -1,7 +1,7 @@
 setwd("/opt/tensiobot/analisis/")
 
 library("xlsx")
-path <- "./bbdd.xlsx"
+path <- "./bbddcompleta.xlsx"
 pacientes <-read.xlsx(path, "pacientes", header=TRUE, colClasses=NA)
 summary(pacientes)
 CheckList <-read.xlsx(path, "CheckList", header=TRUE, colClasses=NA)
@@ -22,7 +22,7 @@ FarmacosPaciente <- read.xlsx(path, "FarmacosPaciente", header=TRUE, colClasses=
 summary(FarmacosPaciente)
 
 #ChecklistCompleto
-ChecklistCompleto <- read.xlsx(path, "Hoja5", header=TRUE, colClasses=NA)
+ChecklistCompleto <- read.xlsx(path, "ChecklistCompleto", header=TRUE, colClasses=NA)
 summary(ChecklistCompleto)
 CoefCI <- read.xlsx(path, "CoefCI", header=TRUE, colClasses=NA)
 summary(CoefCI)
